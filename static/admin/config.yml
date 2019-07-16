@@ -44,9 +44,9 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-          - {label: Education, name: education, widget: object, fields: [{label: Degrees, name: degrees, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: "End Date", name: "date", widget: "datetime"}]}]}
-          - {label: Work, name: work, widget: object, fields: [{label: Year, name: year, widget: datetime}, {label: Projects, name: projects, widget: list, fields: [{label: "Title", name: "title", widget: "string"}, {label: Description, name: description, widget: text}]}]}
-          - {label: Other Education, name: other_education, widget: object, fields: [{label: Year, name: year, widget: datetime}, {label: Projects, name: projects, widget: list, fields: [{label: "Title", name: "title", widget: "string"}, {label: Description, name: description, widget: text}]}]}
+          - {label: Education, name: education, widget: object, fields: [{label: Degrees, name: degrees, widget: list, fields: [, {label: "End Date", name: "date", widget: "date"}, {label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}]}]}
+          - {label: Work, name: work, widget: object, fields: [{label: Year, name: year, widget: date}, {label: Projects, name: projects, widget: list, fields: [{label: "Title", name: "title", widget: "string"}, {label: Description, name: description, widget: text}]}]}
+          - {label: Other Education, name: other_education, widget: object, fields: [{label: Year, name: year, widget: date}, {label: Projects, name: projects, widget: list, fields: [{label: "Title", name: "title", widget: "string"}, {label: Description, name: description, widget: text}]}]}
           - {label: Language, name: language, widget: object, fields: [{label: Entry, name: entry, widget: list, fields: [
             {label: Title, name: title, widget: string}, {label: Level, name: level, widget: string}
           ]}]}
