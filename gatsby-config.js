@@ -62,6 +62,19 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-intl',
+      options: {
+        // language JSON resource path
+        path: `${__dirname}/src/intl`,
+        // supported language
+        languages: ['en', 'es', 'de'],
+        // language file path
+        defaultLanguage: 'de',
+        // option to redirect to `/de` when connecting `/`
+        redirect: true,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,

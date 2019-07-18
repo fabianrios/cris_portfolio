@@ -1,0 +1,15 @@
+{
+    "home": "🏡",
+    "latest_stories": "Latest stories",
+    "read_more": "Read more",
+    "about": "About me",
+    "education": "Education",
+    "work": "Work",
+    "further": "Further education",
+    "languages": "Languages",
+    "interest": "Interest", 
+    "notfound": {
+        "header": "NOT FOUND",
+        "description": "You just hit a route that doesn't exist... the sadness."
+    }
+}

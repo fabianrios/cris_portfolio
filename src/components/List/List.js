@@ -1,10 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 import ListStyles from './List.sass'
 
 export const List = ({ content, title }) => (
     <div className="global_list">
-        <h3 className="title is-3">{title}</h3>
+        <h3 className="title is-3">
+            <FormattedMessage id={title} />
+        </h3>
         <ul className="work-list">
             {content.map((element, index) => (
             <li key={index}>
@@ -32,4 +35,4 @@ List.propTypes = {
   title: PropTypes.string,
 }
 
-export default List
+export default injectIntl(List)

@@ -1,0 +1,15 @@
+{
+    "home": "🏡",
+    "latest_stories": "Ultimas publicaciones",
+    "read_more": "Leer mas",
+    "about": "Sobre mi",
+    "education": "Educación",
+    "work": "Actividades",
+    "further": "Otra formación",
+    "languages": "Idiomas",
+    "interest": "Intereses", 
+    "notfound": {
+        "header": "NO ENCONTRADO",
+        "description": "Encontraste una ruta que no existe... :(."
+    }
+}

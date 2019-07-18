@@ -1,0 +1,15 @@
+{
+    "home": "🏡",
+    "latest_stories": "kürzliche Posts",
+    "read_more": "Weiterlesen",
+    "about": "Über mich",
+    "education": "Bildung",
+    "work": "Wichtigste Berufserfahrung",
+    "further": "Weiterbildung",
+    "languages": "Sprachkenntnisse",
+    "interest": "Sonstige Kenntnisse/Interessen", 
+    "notfound": {
+        "header": "NITCH GEFUNDEN",
+        "description": "You just hit a route that doesn't exist... the sadness."
+    }
+}

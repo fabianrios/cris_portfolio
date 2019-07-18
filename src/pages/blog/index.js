@@ -1,4 +1,5 @@
 import React from 'react'
+import { FormattedMessage } from "gatsby-plugin-intl"
 
 import Layout from '../../components/Layout'
 import BlogRoll from '../../components/BlogRoll'
@@ -22,7 +23,7 @@ export default class BlogIndexPage extends React.Component {
               padding: '1rem',
             }}
           >
-            Latest Stories
+            <FormattedMessage id="latest_stories" />
           </h1>
         </div>
         <section className="section">

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 import Education from '../components/Education/Education'
 import List from '../components/List/List'
 
@@ -19,11 +20,15 @@ export const AboutPageTemplate = ({ title, content, contentComponent, education,
                 {title}
               </h2>
               <PageContent className="content" content={content} />
-              <h4 className="title is-4">Education</h4>
+              <h4 className="title is-4">
+                <FormattedMessage id="education" />
+              </h4>
               <Education className="education" degrees={education.degrees} />
               <List title="work" content={work} />
-              <List title="further education" content={other_education} />
-              <h3 className="title is-3">language</h3>
+              <List title="further" content={other_education} />
+              <h3 className="title is-3">
+                <FormattedMessage id="languages" />
+              </h3>
               <ul className="languages">
                 {language.entry.map((entry, index) => (
                   <li key={index}>
@@ -35,7 +40,9 @@ export const AboutPageTemplate = ({ title, content, contentComponent, education,
                 ))}  
               </ul>
               <br />
-              <h3 className="title is-3">interest</h3>
+              <h3 className="title is-3">
+                <FormattedMessage id="interest" />
+              </h3>
               <ul className="interest">
                 {others.entry.map((entry, index) => (
                   <li key={index}>
@@ -96,7 +103,7 @@ AboutPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default AboutPage
+export default injectIntl(AboutPage)
 
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl"
+
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -40,7 +41,7 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              HOME
+              <FormattedMessage id="home" />
             </Link>
             {/* Hamburger menu */}
             <div
@@ -59,7 +60,7 @@ const Navbar = class extends React.Component {
           >
             <div className="navbar-start has-text-centered">
               <Link className="navbar-item" to="/about">
-                About
+                <FormattedMessage id="about" />
               </Link>
               <Link className="navbar-item" to="/blog">
                 Blog
@@ -72,4 +73,4 @@ const Navbar = class extends React.Component {
   }
 }
 
-export default Navbar
+export default injectIntl(Navbar)
