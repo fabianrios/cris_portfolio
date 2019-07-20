@@ -1,5 +1,6 @@
 ---
 templateKey: about-page
+langKey: en
 title: About me
 education:
   degrees:

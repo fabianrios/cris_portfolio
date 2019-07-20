@@ -24,7 +24,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent, education,
                 <FormattedMessage id="education" />
               </h4>
               <Education className="education" degrees={education.degrees} />
-              <List title="work" content={work} />
+              {/* <List title="work" content={work.projects} /> */}
               <List title="further" content={other_education} />
               <h3 className="title is-3">
                 <FormattedMessage id="languages" />
@@ -67,14 +67,8 @@ AboutPageTemplate.propTypes = {
   education: PropTypes.shape({
     degrees: PropTypes.array
   }),
-  work: PropTypes.shape({
-    startdate: PropTypes.instanceOf(Date),
-    projects: PropTypes.object,
-  }),
-  other_education: PropTypes.shape({
-    startdate: PropTypes.instanceOf(Date),
-    projects: PropTypes.object,
-  }),
+  work: PropTypes.array,
+  other_education: PropTypes.array,
   language: PropTypes.shape({
     entry: PropTypes.array,
   }),
@@ -83,6 +77,7 @@ AboutPageTemplate.propTypes = {
 
 const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data
+  console.log('data', data)
   return (
     <Layout>
       <AboutPageTemplate
@@ -106,11 +101,13 @@ AboutPage.propTypes = {
 export default injectIntl(AboutPage)
 
 export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+  query AboutPage($langKey: String!) {
+    markdownRemark(frontmatter: {langKey: {eq: $langKey}, templateKey: {eq: "about-page"}}) {
       html
+      id
       frontmatter {
         title
+        langKey
         education {
           degrees {
             date(formatString: "MMMM DD, YYYY")
