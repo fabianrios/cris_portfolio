@@ -13,8 +13,8 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: Language, name: langKey, widget: "select", options:  ["es", "en", "de"], default: "es"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Language", name: "langkey", widget: "select", options:  ["es", "en", "de"], default: "es"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
@@ -28,9 +28,9 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+      - {label: Language, name: langKey, widget: "select", options:  ["es", "en", "de"], default: "es"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Language", name: "langkey", widget: "select", options:  ["es", "en", "de"], default: "es"}
       - {label: Education, name: education, widget: object, fields: [{label: Degrees, name: degrees, widget: list, fields: [{label: "End Date", name: "date", widget: "date"}, {label: Title, name: title, widget: string}, {label: Institution, name: institution, widget: string}]}]}
       - {label: Work, name: work, widget: object, fields: [{label: "Start date", name: startdate, widget: date}, {label: Projects, name: projects, widget: list, fields: [{label: "Title", name: "title", widget: "string"}, {label: Description, name: description, widget: text}]}]}
       - {label: "Other Education", name: other_education, widget: list, fields: [{label: "Start date", name: startdate, widget: date}, {label: Projects, name: projects, widget: list, fields: [{label: "Title", name: "title", widget: "string"}, {label: Description, name: description, widget: text}]}]}
@@ -50,7 +50,6 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: Title, name: title, widget: string}
-          - {label: "Language", name: "langkey", widget: "select", options:  ["es", "en", "de"], default: "es"}
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}
