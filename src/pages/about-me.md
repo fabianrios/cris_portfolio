@@ -2,23 +2,6 @@
 templateKey: about-page
 langKey: en
 title: About me
-education:
-  degrees:
-    - date: 2018-06-08T22:29:52.997Z
-      institution: Universität Heinrich Heine Düsseldorf
-      title: >-
-        B.A Transkulturalität - Medien, Sprachen und Texte in einer
-        globalisierten Welt (vorläufig)
-    - date: 2011-10-05T22:30:38.953Z
-      institution: >-
-        Universität „Universidad Nacional de Colombia“ Studienschwerpunkt:
-        Kunstgeschichte und Theorie / Zeit und Raum
-      title: Diplom der Bildenden Kunst (B.A.)
-    - date: 2019-07-16T22:31:48.012Z
-      institution: Universität „Pontificia Universidad Javeriana“
-      title: >-
-        Zertifikat „Unternehmertum und Management in Kultur- und
-        Kreativwirtschaft“
 other_education:
   - projects:
       - description: >-
