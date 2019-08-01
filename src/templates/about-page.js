@@ -23,7 +23,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent, education,
               <h4 className="title is-4">
                 <FormattedMessage id="education" />
               </h4>
-              <Education className="education" degrees={education.degrees} />
+              {/* <Education className="education" degrees={education.degrees} /> */}
               {/* <List title="work" content={work.projects} /> */}
               <List title="further" content={other_education} />
               <h3 className="title is-3">
@@ -108,13 +108,6 @@ export const aboutPageQuery = graphql`
       frontmatter {
         title
         langKey
-        education {
-          degrees {
-            date(formatString: "MMMM DD, YYYY")
-            institution
-            title
-          }
-        }
         other_education {
           startdate(formatString: "MMMM DD, YYYY")
           projects {
