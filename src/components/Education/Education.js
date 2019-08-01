@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import EducationStyles from './Education.sass'
+// import EducationStyles from './Education.sass'
 
 export const Education = ({ degrees, className }) => (
   <ul className={className}>

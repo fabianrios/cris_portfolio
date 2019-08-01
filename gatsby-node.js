@@ -35,16 +35,17 @@ exports.createPages = ({ actions, graphql }) => {
     posts.forEach(edge => {
       const langKey = edge.node.frontmatter.langKey || 'en'
       const id = edge.node.id
+      const verified_path = edge.node.frontmatter.templateKey === 'about-page' ? edge.node.frontmatter.templateKey : edge.node.fields.slug
       createPage({
-        path: edge.node.fields.slug,
+        path: verified_path,
         tags: edge.node.frontmatter.tags,
         component: path.resolve(
           `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
         ),
         // additional data can be passed via context
         context: {
-          langKey,
           id,
+          langKey
         },
       })
     })
