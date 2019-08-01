@@ -11,6 +11,8 @@ work:
   - projects:
       - description: adsdasda
         title: dasd
+      - description: asdasdasdasdasda
+        title: asdasda
     startdate: 2019-08-01T14:28:50.742Z
 other_education:
   - projects:
