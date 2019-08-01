@@ -1,11 +1,11 @@
 ---
 templateKey: about-page
-langKey: es
-title: Sobre mi
+langKey: en
+title: About me
 education:
   degrees:
     - date: 2018-06-08T22:29:52.997Z
-      institution: Universidad (Universität Heinrich Heine Düsseldorf)
+      institution: Universität Heinrich Heine Düsseldorf
       title: >-
         B.A Transkulturalität - Medien, Sprachen und Texte in einer
         globalisierten Welt (vorläufig)
@@ -19,11 +19,6 @@ education:
       title: >-
         Zertifikat „Unternehmertum und Management in Kultur- und
         Kreativwirtschaft“
-work:
-  projects:
-    - description: asda
-      title: a
-  startdate: 2019-07-20T11:37:13.254Z
 other_education:
   - projects:
       - description: >-
@@ -58,6 +53,6 @@ others:
         selbstständig, systematisch, teamfähig, zielorientiert, zuverlässig.
       title: Charaktereigenschaften
 ---
-### Editar
+### here to edit
 
-aca para editar
+so here it´s a little bit about me

@@ -115,13 +115,6 @@ export const aboutPageQuery = graphql`
             title
           }
         }
-        work {
-          startdate(formatString: "MMMM DD, YYYY")
-          projects {
-            title
-            description
-          }
-        }
         other_education {
           startdate(formatString: "MMMM DD, YYYY")
           projects {

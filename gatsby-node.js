@@ -34,6 +34,7 @@ exports.createPages = ({ actions, graphql }) => {
 
     posts.forEach(edge => {
       const langKey = edge.node.frontmatter.langKey || 'en'
+      const id = edge.node.id
       createPage({
         path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
@@ -43,6 +44,7 @@ exports.createPages = ({ actions, graphql }) => {
         // additional data can be passed via context
         context: {
           langKey,
+          id,
         },
       })
     })

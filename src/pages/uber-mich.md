@@ -7,11 +7,6 @@ education:
     - date: 2019-07-20T11:37:18.152Z
       institution: a
       title: a
-work:
-  projects:
-    - description: asda
-      title: a
-  startdate: 2019-07-20T11:37:13.254Z
 other_education:
   - projects:
       - description: asda
