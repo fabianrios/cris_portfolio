@@ -2,6 +2,16 @@
 templateKey: about-page
 langKey: es
 title: Sobre mi
+education:
+  degrees:
+    - date: 2019-08-01T14:28:59.677Z
+      institution: dasda
+      title: dasda
+work:
+  - projects:
+      - description: adsdasda
+        title: dasd
+    startdate: 2019-08-01T14:28:50.742Z
 other_education:
   - projects:
       - description: >-
